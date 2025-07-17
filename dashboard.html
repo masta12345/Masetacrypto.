@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Crypto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      padding: 20px;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      color: #00ffcc;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #58a6ff;
+      margin-top: 40px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .music-control {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+    button {
+      padding: 10px 15px;
+      border: none;
+      background: #00ffcc;
+      color: #000;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #00cc99;
+    }
+    .faq {
+      background: #1c1f26;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="music-control">
+    <button onclick="toggleMusic()">🎵 Musik ON/OFF</button>
+  </div>
+
+  <audio id="djMusic" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung musik!
+  </audio>
+
+  <h1>📘 Edukasi Dunia Crypto Lengkap</h1>
+
+  <div class="section">
+    <h2>📌 Apa itu Crypto?</h2>
+    <p>Crypto adalah mata uang digital terdesentralisasi. Bitcoin adalah pelopornya, dan saat ini ada ribuan jenis lainnya seperti Ethereum, Solana, dll.</p>
+  </div>
+
+  <div class="section">
+    <h2>🧱 Apa itu Blockchain?</h2>
+    <p>Teknologi di balik crypto. Blockchain menyimpan data transaksi dalam blok yang terhubung. Transparan, aman, dan tak bisa dimanipulasi.</p>
+  </div>
+
+  <div class="section">
+    <h2>🎨 Apa itu NFT?</h2>
+    <p>NFT adalah bukti kepemilikan digital. Karya seni, musik, bahkan meme bisa dijadikan aset NFT. Setiap token unik dan tidak bisa ditukar satu sama lain.</p>
+  </div>
+
+  <div class="section">
+    <h2>🌌 Apa itu Metaverse?</h2>
+    <p>Dunia virtual yang bisa kamu akses pakai avatar. Kamu bisa beli tanah, bangun rumah, bahkan buka toko di Metaverse pakai crypto.</p>
+  </div>
+
+  <div class="section">
+    <h2>🪙 Altcoin & Token</h2>
+    <p>Segala jenis crypto selain Bitcoin disebut Altcoin. Ada Ethereum, BNB, Cardano, Shiba Inu, dll. Masing-masing punya fungsi dan komunitas sendiri.</p>
+  </div>
+
+  <div class="section">
+    <h2>🎁 Airdrop & Faucet</h2>
+    <p>Airdrop = crypto gratis dari proyek baru sebagai promosi. Faucet = reward crypto kecil jika menyelesaikan tugas seperti klik iklan, isi captcha, dll.</p>
+  </div>
+
+  <div class="faq">
+    <h2>❓ Tanya Jawab Crypto</h2>
+    <ul>
+      <li><b>💸 Bisa kaya dari crypto?</b><br>Ya, banyak yang kaya. Tapi banyak juga yang rugi. Harus riset!</li>
+      <li><b>🛡️ Aman gak sih?</b><br>Kalau simpan di wallet pribadi (seperti Trust Wallet), lebih aman.</li>
+      <li><b>📉 Kenapa harga crypto naik turun?</b><br>Karena permintaan-pasokan, berita global, dan sentimen pasar.</li>
+      <li><b>🇮🇩 Apakah crypto legal di Indonesia?</b><br>Legal untuk jual-beli (trading), tapi belum untuk pembayaran.</li>
+    </ul>
+  </div>
+
+  <script>
+    let music = document.getElementById("djMusic");
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+
+</body>
+</html>
